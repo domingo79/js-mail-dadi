@@ -12,6 +12,7 @@ if (controllo < archivio_mail.length && controllo >= 0) {
     document.getElementById('controllo').innerHTML = 'Accesso consentito';
     console.log('LOG-IN');
 } else {
+    document.getElementById('no_log').innerHTML = 'Accesso Negato'
     console.log('ACCESSO NEGATO');
 }
 
