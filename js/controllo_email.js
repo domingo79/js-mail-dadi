@@ -4,11 +4,17 @@ var archivio_mail = ['pippo@gmail.com', 'pluto@gmail.com', 'carlo@gmail.com', 'g
 
 var chiedere_mail = prompt('inserisci la tua e-mail per accedere');
 
-var controllo_mail = archivio_mail.includes(chiedere_mail);
+// var controllo_mail = archivio_mail.includes(chiedere_mail);
 
-if (controllo_mail) {
+var controllo = archivio_mail.indexOf(chiedere_mail)
+
+if (controllo < archivio_mail.length && controllo >= 0) {
     document.getElementById('controllo').innerHTML = 'Accesso consentito';
     console.log('LOG-IN');
 } else {
     console.log('ACCESSO NEGATO');
 }
+
+
+
+
