@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dado</title>
+    <link rel="stylesheet" href="./asset/css/dadi_style.css">
+    <title>DADI</title>
 </head>
 
 <body>
-    <h1>Sfida dei dadi</h1>
-    <ul>
-        <li>
-            player:
-            <span id="risultato_user"></span>
-            <span id="user"></span>
-        </li>
-        <li>
-            VS
+    <div class="container">
+        <h1>Batti il banco!!</h1>
+        <div class="giocatori">
+            <span>Player:</span> <span>VS</span> <span>Banco:</span>
+        </div>
+        <div class="dadi">
+            <span><img id="img_user" src="" alt="" width="70" height="70"></span>
             <span id="pareggio"></span>
-        </li>
-        <li>
-            computer:
-            <span id="risultato_pc"></span>
-            <span id="pc"></span>
-        </li>
-    </ul>
+            <span><img id="img_pc" src="" alt="" width="70" height="70"></span>
+        </div>
+        <div class="win">
+            <span id="user"></span> <span id="pc"></span>
+        </div>
+        <img src="./asset/img/logo_dadi.jpg" alt="">
+    </div>
 
 
-    <script src="./js/dado.js"></script>
+
+
+
+
+
+
+
+
+    <script src="./asset/js/dado.js"></script>
 </body>
 
 </html>
