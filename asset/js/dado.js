@@ -14,33 +14,48 @@ if (user > pc) {
     console.log('pareggio')
 }
 
-if (user == 1) {
-    document.getElementById('img_user').src = '/asset/img/uno_b.jpg';
-} else if (user == 2) {
-    document.getElementById('img_user').src = '/asset/img/due_b.jpg';
-} else if (user == 3) {
-    document.getElementById('img_user').src = '/asset/img/tre_b.jpg';
-} else if (user == 4) {
-    document.getElementById('img_user').src = '/asset/img/quattro_b.jpg';
-} else if (user == 5) {
-    document.getElementById('img_user').src = '/asset/img/cinque_b.jpg';
-} else {
-    document.getElementById('img_user').src = '/asset/img/sei_b.jpg';
+switch (user) {
+    case 1:
+        document.getElementById('img_user').src = '/asset/img/uno_b.jpg';
+        break;
+    case 2:
+        document.getElementById('img_user').src = '/asset/img/due_b.jpg';
+        break;
+    case 3:
+        document.getElementById('img_user').src = '/asset/img/tre_b.jpg';
+        break;
+    case 4:
+        document.getElementById('img_user').src = '/asset/img/quattro_b.jpg';
+        break;
+    case 5:
+        document.getElementById('img_user').src = '/asset/img/cinque_b.jpg';
+        break;
+    case 6:
+        document.getElementById('img_user').src = '/asset/img/sei_b.jpg';
+        break;
 }
 
-if (pc == 1) {
-    document.getElementById('img_pc').src = '/asset/img/uno_r.jpg';
-} else if (pc == 2) {
-    document.getElementById('img_pc').src = '/asset/img/due_r.jpg';
-} else if (pc == 3) {
-    document.getElementById('img_pc').src = '/asset/img/tre_r.jpg';
-} else if (pc == 4) {
-    document.getElementById('img_pc').src = '/asset/img/quattro_r.jpg';
-} else if (pc == 5) {
-    document.getElementById('img_pc').src = '/asset/img/cinque_r.jpg';
-} else {
-    document.getElementById('img_pc').src = '/asset/img/sei_r.jpg';
+switch (pc) {
+    case 1:
+        document.getElementById('img_pc').src = '/asset/img/uno_r.jpg';
+        break;
+    case 2:
+        document.getElementById('img_pc').src = '/asset/img/due_r.jpg';
+        break;
+    case 3:
+        document.getElementById('img_pc').src = '/asset/img/tre_r.jpg';
+        break;
+    case 4:
+        document.getElementById('img_pc').src = '/asset/img/quattro_r.jpg';
+        break;
+    case 5:
+        document.getElementById('img_pc').src = '/asset/img/cinque_r.jpg';
+        break;
+    case 6:
+        document.getElementById('img_pc').src = '/asset/img/sei_r.jpg';
+        break;
 }
+
 
 
 console.log(user);
